@@ -25,3 +25,5 @@ def main():
     elif pizza_choice == 4:
         pizza = "Super Supreme Chicken"
         base_price = 43.637
+  else:
+        print("Invalid choice. Please select a valid pizza.")
