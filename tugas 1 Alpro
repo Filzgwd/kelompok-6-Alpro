@@ -54,3 +54,30 @@ return
 #Pelanggan memilih crust
     print("Silahkan pilih crust pizza anda:")
     print("1. stuffedcrust cheese")
+    print("2. stuffedcrust sausage")
+    print("3. cheesy bites")
+    print("4. crown crust")
+    crust = int(input("pilih crust (1-4): "))
+    
+    crust_price = 0.0
+    if crust == 1:
+        crust_price = 11.818
+    elif crust == 2:
+        crust_price = 9.091
+    elif crust == 3:
+        crust_price = 13.636
+    elif crust == 4:
+        crust_price = 11.818
+    else:
+        print("Invalid crust. Please select a valid crust.")
+        return
+    cheese = input("apakah ingin extra keju  ? (iya/tidak): ")
+    cheese_price = 13.000 if cheese.lower() == "iya" else 0.0
+
+    total_price = base_price + size_price + crust_price + cheese_price
+#Setelah selesai pelanggan akan diberitau harga yang harus dibayarkan
+    print(f"Pilihan anda {pizza} dengan ukuran {size} dan {' stuffed crust' if crust_price > 0 else ' regular crust'} dan {' extra cheese' if cheese_price > 0 else ' no extra cheese'} is ready!")
+    print(f"Terima kasih telah memilih pesanan anda. Total pesanan anda: Rp.{total_price:.2f}")
+
+if __name__ == "__main__":
+    main()
