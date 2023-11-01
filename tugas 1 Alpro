@@ -1,0 +1,27 @@
+#Pelanggan datang ke Pizza Hut cabang madiun
+def main():
+# pelanggan akan disajikan daftar varian piza
+#pelanggan akan memilih varian yang akan di order
+    print("=======  Welcome to Pizza Hut cabang madiun!  =======")
+    print("Messi pernah makan disini!!")
+    print("Silahkan pilih varian yang anda suka:")
+    print("1. Frankfurter")
+    print("2. Meat Monsta")
+    print("3. Super Supreme")
+    print("4. Super Supreme Chicken")
+
+#Pelanggan Memilih menu varian pizza di menu
+    pizza_choice = int(input("Silahka  pilih toping (1-4): "))
+
+    if pizza_choice == 1:
+        pizza = "Frankfurter"
+        base_price = 43.637
+    elif pizza_choice == 2:
+        pizza = "Meat Monsta"
+        base_price = 43.637
+    elif pizza_choice == 3:
+        pizza = "Super Supreme"
+        base_price = 43.637
+    elif pizza_choice == 4:
+        pizza = "Super Supreme Chicken"
+        base_price = 43.637
