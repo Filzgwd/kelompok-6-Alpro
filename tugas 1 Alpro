@@ -27,3 +27,30 @@ def main():
         base_price = 43.637
   else:
         print("Invalid choice. Please select a valid pizza.")
+return
+
+#Setelah memilih varian pelanggan memilih ukuran       
+#Pelanggan memilih ukuran pizza
+    print("Silahkan pilih ukuran pizza anda:")
+    print("1. personal")
+    print("2. Regular")
+    print("3. Large")
+
+    size_choice = int(input("pilih ukuran (1-3): "))
+    size_price = 0.0
+    if size_choice == 1:
+        size = "personal"
+        size_price = 0.0
+    elif size_choice == 2:
+        size = "regular"
+        size_price = 57.273
+    elif size_choice == 3:
+        size = "large"
+        size_price = 89.091
+    else:
+        print("Invalid size. Please select a valid size.")
+        return
+#Setelah memilih ukuran pizza pelanggan diminta memilih crust
+#Pelanggan memilih crust
+    print("Silahkan pilih crust pizza anda:")
+    print("1. stuffedcrust cheese")
