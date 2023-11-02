@@ -26,7 +26,7 @@ def main():
         pizza = "Super Supreme Chicken"
         base_price = 43.637
   else:
-        print("Invalid choice. Please select a valid pizza.")
+        print("Pilihan yang anda masukkan salah, Mohon masukkan pilihan yang diberikan.")
 return
 
 #Setelah memilih varian pelanggan memilih ukuran       
@@ -48,7 +48,7 @@ return
         size = "large"
         size_price = 89.091
     else:
-        print("Invalid size. Please select a valid size.")
+        print("Size yang anda masukkan salah, Mohon masukkan size yang tertera.")
         return
 #Setelah memilih ukuran pizza pelanggan diminta memilih crust
 #Pelanggan memilih crust
@@ -69,7 +69,7 @@ return
     elif crust == 4:
         crust_price = 11.818
     else:
-        print("Invalid crust. Please select a valid crust.")
+        print("Crust yang anda masukkan salah, Mohon masukkan pilihan dengan benar.")
         return
     cheese = input("apakah ingin extra keju  ? (iya/tidak): ")
     cheese_price = 13.000 if cheese.lower() == "iya" else 0.0
