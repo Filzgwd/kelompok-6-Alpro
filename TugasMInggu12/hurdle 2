@@ -1,1 +1,17 @@
+def belok_kanan():
+    turn_left()
+    turn_left()
+    turn_left()
 
+def melewati_dinding():
+    move()
+    turn_left()
+    move()
+    belok_kanan()
+    move()
+    belok_kanan()
+    move()
+    turn_left()
+
+while at_goal()==False:
+  melewati_dinding()
