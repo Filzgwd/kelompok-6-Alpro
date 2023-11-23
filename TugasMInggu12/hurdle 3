@@ -1,1 +1,19 @@
+def belok_kanan():
+    turn_left()
+    turn_left()
+    turn_left()
 
+def lompat():
+    turn_left()
+    move()
+    belok_kanan()
+    move()
+    belok_kanan()
+    move()
+    turn_left()
+
+while not at_goal():
+    if wall_in_front():
+        lompat()
+    elif not wall_in_front():
+        move()
