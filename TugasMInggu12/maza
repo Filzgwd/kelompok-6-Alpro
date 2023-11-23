@@ -1,1 +1,15 @@
+def belok_kanan():
+    turn_left()
+    turn_left()
+    turn_left()
 
+def labirin():
+    while not at_goal():
+        if right_is_clear():
+            belok_kanan()
+        if wall_in_front() and wall_on_right():
+            turn_left()
+        else:
+            move()
+
+move()
